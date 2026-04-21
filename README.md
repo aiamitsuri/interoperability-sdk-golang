@@ -1,4 +1,4 @@
-# BHILANI Interoperability by kantini, chanchali
+# BHILANI Interop SDK Suite by kantini, chanchali
 
 Run SDK
 
@@ -182,4 +182,4 @@ Second time
 Third time
 <img width="929" height="443" alt="golang3" src="https://github.com/user-attachments/assets/88d2da0e-9c39-436c-9398-9c483f039b09" />
 
-**@AIAmitSuri, Co-creator/Co-founder (🙏 Mata Shabri 🙏)**
+**🙏 Mata Shabri 🙏**
