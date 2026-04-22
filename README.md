@@ -6,34 +6,36 @@ Run SDK
 
 Basic Usage
 
-    package main
-    
+package main
+
     import (
     	"fmt"
-    
     	SDK "interoperability-sdk-golang/interoperability_bridge_golang"
     )
     
-    func RunDemo() {
-    	strPtr := func(s string) *string { return &s }
+    var (
+    	strPtr = func(s string) *string { return &s }
     
-    	fmt.Println("Go SDK")
-    
-    	params := SDK.FilterParams{
-    		Page: strPtr("1"),
+    	params = SDK.FilterParams{
+    		Language:       nil,
+    		Integration:    nil,
+    		Crates:         nil,
+    		Developmentkit: nil,
+    		Page:           strPtr("1"),
+    		Ids:            nil,
     	}
+    )
+    
+    func main() {
+    	fmt.Println("Go SDK")
     
     	response, err := SDK.FetchInteroperability(params)
     	if err != nil {
-    		fmt.Printf("Error: %v\n", err)
+    		fmt.Printf("Native Interop Failed: %v\n", err)
     		return
     	}
     
     	fmt.Printf("%+v\n", response)
-    }
-    
-    func main() {
-    	RunDemo()
     }
 
 Dynamic Usage
